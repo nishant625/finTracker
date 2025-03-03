@@ -7,7 +7,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postinstall": "npx ts-node -r dotenv/config scripts/seed.ts"
   },
   "dependencies": {
     "@aws-sdk/credential-providers": "latest",
