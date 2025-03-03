@@ -6,9 +6,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postinstall": "NODE_OPTIONS='--loader ts-node/esm' npx ts-node -r dotenv/config scripts/seed.ts",
     "start": "next start",
-    "lint": "next lint",
-    "postinstall": "NODE_OPTIONS='--loader ts-node/esm' npx ts-node -r dotenv/config scripts/seed.ts"
+    "lint": "next lint"
   },
   "dependencies": {
     "@aws-sdk/credential-providers": "latest",
