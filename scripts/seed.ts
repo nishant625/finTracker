@@ -92,7 +92,7 @@ async function seedDatabase() {
     console.error("❌ Error seeding database:", error);
   } finally {
     await client.close();
-    console.log("🔌 MongoDB connection closed.");
+    console.log("🔌 MongoDB connection closed  .");
   }
 }
 
